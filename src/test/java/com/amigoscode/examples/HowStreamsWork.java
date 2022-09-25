@@ -14,7 +14,7 @@ public class HowStreamsWork {
         List<String> emails = MockData.getPeople()
                 .stream()
                 .map(Person::getEmail)
-                .collect(Collectors.toList());
+                .toList();
 
         emails.forEach(System.out::println);
     }
