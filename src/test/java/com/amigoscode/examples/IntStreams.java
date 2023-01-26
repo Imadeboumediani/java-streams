@@ -18,7 +18,7 @@ public class IntStreams {
         }
         //exclusive 0*1*2*3*4*5*6*7*8*9
         IntStream.range(0,10)
-                .forEach(index -> System.out.println(index));
+                .forEach(System.out::println);
         //inclusive 0*1*2*3*4*5*6*7*8*9*10
         IntStream.rangeClosed(0,10).forEach(System.out::println);
     }
